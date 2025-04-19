@@ -1,4 +1,6 @@
-import './App.css';
+import '@matidiaz000/animeflv-clone-library/dist/index.css';
+//@import './../../../animeflv-clone-library/dist/index.css';
+import './styles.scss';
 
 const App = () => {
   return (
