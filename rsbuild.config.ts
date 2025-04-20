@@ -7,4 +7,8 @@ export default defineConfig({
     pluginReact(),
     pluginSass()
   ],
+  html: {
+    template: './index.html',
+  },
+
 });

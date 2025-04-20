@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@matidiaz000/animeflv-clone-library':
-        specifier: 0.0.4
-        version: 0.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 0.0.9
+        version: 0.0.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       clipboard:
         specifier: ^2.0.11
         version: 2.0.11
@@ -20,6 +20,9 @@ importers:
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      react-router:
+        specifier: ^7.5.1
+        version: 7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -104,8 +107,8 @@ packages:
   '@bufbuild/protobuf@2.2.5':
     resolution: {integrity: sha512-/g5EzJifw5GF8aren8wZ/G5oMuPoGeS6MQD3ca8ddcvdXR5UELUfdTZITCGNhNXynY/AYl3Z4plmxdj/tRl/hQ==}
 
-  '@matidiaz000/animeflv-clone-library@0.0.4':
-    resolution: {integrity: sha512-R8K7QVJjLBbWPPk5kzOvrntkgZqYDgt9hfUBpiS+t+g8K6uN46zwUyZlTKJkfa8AN/Rrq/Qjs4CBu+8cWKeUHQ==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-library/0.0.4/acff9403fb7e7cbad7cb734e754309e928848166}
+  '@matidiaz000/animeflv-clone-library@0.0.9':
+    resolution: {integrity: sha512-rFKBGENUq6j9SInfiAq4rmsS6wEJ88tkrAbswlcPcm1PAN7Mn6phaKQ2/loop0LrcQOtQs8IPi4A0sKhWAm70w==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-library/0.0.9/e7927d9c832097e1bfc934d6405057990d0c30e3}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -242,6 +245,10 @@ packages:
   colorjs.io@0.5.2:
     resolution: {integrity: sha512-twmVoizEW7ylZSN32OgKdXRmo1qg+wT5/6C3xu5b9QsWzSFAhHLn2xd8ro0diCsKfCj1RdaTP/nrcW+vAoQPIw==}
 
+  cookie@1.0.2:
+    resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
+    engines: {node: '>=18'}
+
   core-js@3.41.0:
     resolution: {integrity: sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==}
 
@@ -312,6 +319,16 @@ packages:
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
+
+  react-router@7.5.1:
+    resolution: {integrity: sha512-/jjU3fcYNd2bwz9Q0xt5TwyiyoO8XjSEFXJY4O/lMAlkGTHWuHRAbR9Etik+lSDqMC7A7mz3UlXzgYT6Vl58sA==}
+    engines: {node: '>=20.0.0'}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
 
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
@@ -454,6 +471,9 @@ packages:
   select@1.1.2:
     resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==}
 
+  set-cookie-parser@2.7.1:
+    resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -478,6 +498,9 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  turbo-stream@2.4.0:
+    resolution: {integrity: sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g==}
 
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
@@ -526,7 +549,7 @@ snapshots:
 
   '@bufbuild/protobuf@2.2.5': {}
 
-  '@matidiaz000/animeflv-clone-library@0.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@matidiaz000/animeflv-clone-library@0.0.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
@@ -665,6 +688,8 @@ snapshots:
 
   colorjs.io@0.5.2: {}
 
+  cookie@1.0.2: {}
+
   core-js@3.41.0: {}
 
   csstype@3.1.3: {}
@@ -717,6 +742,15 @@ snapshots:
       scheduler: 0.26.0
 
   react-refresh@0.17.0: {}
+
+  react-router@7.5.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      cookie: 1.0.2
+      react: 19.1.0
+      set-cookie-parser: 2.7.1
+      turbo-stream: 2.4.0
+    optionalDependencies:
+      react-dom: 19.1.0(react@19.1.0)
 
   react@19.1.0: {}
 
@@ -822,6 +856,8 @@ snapshots:
 
   select@1.1.2: {}
 
+  set-cookie-parser@2.7.1: {}
+
   source-map-js@1.2.1: {}
 
   stackframe@1.3.4: {}
@@ -839,6 +875,8 @@ snapshots:
   tiny-emitter@2.1.0: {}
 
   tslib@2.8.1: {}
+
+  turbo-stream@2.4.0: {}
 
   typescript@5.8.3: {}
 
