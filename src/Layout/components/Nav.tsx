@@ -27,7 +27,6 @@ export const NavComponent = () => {
                     <li key={`${item.description}-${item.id}`}>
                       <NavLink
                         className={({ isActive }) => `${isActive && 'bg-primary'} text-white rounded-2 my-0 small px-2 py-1 text-decoration-none d-inline-block`}
-                        reloadDocument
                         to={item.link}
                       >{item.description}</NavLink>
                     </li>
