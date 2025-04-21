@@ -11,7 +11,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@matidiaz000/animeflv-clone-library": "0.0.9",
+    "@matidiaz000/animeflv-clone-library": "0.0.10",
     "clipboard": "^2.0.11",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

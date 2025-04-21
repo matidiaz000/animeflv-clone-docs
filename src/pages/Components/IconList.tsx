@@ -1,14 +1,13 @@
 import { useState } from 'react';
-import IconsJSON from './../../../../animeflv-clone-library/src/assets/selection.json'
-import { Icon } from '@matidiaz000/animeflv-clone-library'
+import { Icon, IconsList } from '@matidiaz000/animeflv-clone-library'
 import { Alert, IAlert } from '../../components/Alert';
 
 const IconsPage = () => {
   const [searchText, setSearchText] = useState("");
   const [toasts, setToasts] = useState<IAlert[]>([]);
 
-  const filteredIcons = IconsJSON.icons.filter(
-    ({ properties }) =>
+  const filteredIcons = IconsList.icons.filter(
+    ({ properties }: any) =>
       properties.name.toLowerCase().includes(searchText.toLowerCase())
   );
 
