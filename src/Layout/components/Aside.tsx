@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router';
 
 interface ITitlesNav {
   id: number;
@@ -8,21 +9,20 @@ interface ITitlesNav {
 
 export const AsideComponent = () => {
   const [titlesNav, setTitlesNav] = useState<ITitlesNav[] | null>(null);
+  const location = useLocation();
   
   useEffect(() => {
-    if (!titlesNav) {
-      const h2 = document.body.getElementsByTagName(`h2`)
-      const titlesNavMap: ITitlesNav[] = [];
-      let h2Id: ITitlesNav['link'] | null = null;
-      for (let i = 0; i < h2.length; i++) {
-        h2Id = h2[i].getAttribute("id");
-        if (h2Id != null) {
-          titlesNavMap.push({ id: i, link: h2Id, text: h2[i].innerText});
-        }
+    const h2 = document.body.getElementsByTagName(`h2`)
+    const titlesNavMap: ITitlesNav[] = [];
+    let h2Id: ITitlesNav['link'] | null = null;
+    for (let i = 0; i < h2.length; i++) {
+      h2Id = h2[i].getAttribute("id");
+      if (h2Id != null) {
+        titlesNavMap.push({ id: i, link: h2Id, text: h2[i].innerText});
       }
-      setTitlesNav(titlesNavMap)
     }
-  }, [titlesNav]);
+    setTitlesNav(titlesNavMap)
+  }, [location]);
 
   return (
     <div className="sticky-top">
